@@ -15,44 +15,44 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import image from "../../assets/logo.jpg";
+import image from "../../assets/images/logo.jpg";
 
 const doctors = [
   {
     name: "Dermatologist",
     description:
       "A dermatologist is a doctor who has extensive training and knowledge of the skin, scalp, hair and nails and treats conditions that affect those areas.",
-    href: "#",
+    href: "/doctorInfo",
     icon: ChartBarIcon,
   },
   {
     name: "Gynecologist",
     description: "A gynecologist is a doctor who specializes in ",
-    href: "#",
+    href: "/doctorInfo",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Psychiatrist",
     description: "A psychiatrist is a doctor who specializes in ",
-    href: "#",
+    href: "/doctorInfo",
     icon: ShieldCheckIcon,
   },
   {
     name: "ENT Specialist",
     description: "A ENT Specialist is a doctor who specializes in ",
-    href: "#",
+    href: "/doctorInfo",
     icon: Squares2X2Icon,
   },
   {
     name: "Child Specialist",
     description: "A Child Specialist is a doctor who specializes in ",
-    href: "#",
+    href: "/doctorInfo",
     icon: ArrowPathIcon,
   },
   {
     name: "All Doctors & Specialists",
     description: "List of all Doctors & Specialists not specified here.",
-    href: "#",
+    href: "/doctorInfo",
     icon: ArrowPathIcon,
   },
 ];
@@ -131,8 +131,8 @@ const labTest = [
   },
 ];
 const callsToAction = [
-  { name: "Video Consultation", href: "#", icon: PlayIcon },
-  { name: "Voice Consultation", href: "#", icon: PhoneIcon },
+  { name: "Video Consultation", href: "/appointment", icon: PlayIcon },
+  { name: "Voice Consultation", href: "/appointment", icon: PhoneIcon },
 ];
 const resources = [
   {
@@ -164,13 +164,13 @@ const resources = [
   },
 ];
 const recentPosts = [
-  { id: 1, name: "Boost your conversion rate", href: "#" },
+  { id: 1, name: "How secure is the patient's data?", href: "#" },
   {
     id: 2,
-    name: "How to use search engine optimization to drive traffic to your site",
+    name: "How to book an appointment with a doctor?",
     href: "#",
   },
-  { id: 3, name: "Improve your customer experience", href: "#" },
+  { id: 3, name: "How to pay for Doctor with MedxCure?", href: "#" },
 ];
 
 function classNames(...classes) {
@@ -188,7 +188,6 @@ export default function Header() {
               <img
                 className="h-8 w-auto sm:h-10"
                 src={image}
-                // src="https://tailwindui.com/img/logos/mark.svg?color=teal&shade=600"
                 alt=""
               />
             </a>
